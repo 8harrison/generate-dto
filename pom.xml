@@ -7,15 +7,15 @@
 
     <groupId>io.github.harrisonoliveira</groupId>
     <artifactId>generate-dto</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
 
     <name>Generate DTO</name>
     <description>Annotation processor for automatic DTO generation</description>
 
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
+        <maven.compiler.release>21</maven.compiler.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <distributionManagement>
@@ -30,8 +30,9 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.11.0</version>
+                <version>3.12.1</version>
                 <configuration>
+                    <release>21</release>
                     <proc>none</proc>
                 </configuration>
             </plugin>
